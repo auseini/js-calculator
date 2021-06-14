@@ -9,6 +9,7 @@ html, body{
 	padding: 10px;
 	border-radius: 15px;
 	background: rgb(65, 92, 172);
+	width: 340px;
 }
 main{
 	display: flex;
@@ -29,17 +30,16 @@ main{
 }
 .display{
 	text-align: right;
-	height: 60px;
+	height: 35px;
 	margin: 0;
-	font-size: 40px;
+	font-size: 32px;
 	display: table-cell;
 	justify-content: center;
-	padding: 14px 0px 0px 0px;
-	
+	padding: 25px 0px 0px 0px;
+	width: 330px;
 	align-items: center;
 }
 .button{
-
 	background: rgb(206, 196, 143);
 	width: 75px;
 	height: 50px;
@@ -54,9 +54,16 @@ main{
 	margin: auto;
 	width: 340px
 }
+.delete{
+	background: rgb(24, 24, 24);
+	color: white;
+}
 .bigButton{
 	width: 160px;
 	height: 50px;
+}
+.operation{
+	background: rgb(136, 103, 103);
 }
 button:active{
 	background: royalblue;

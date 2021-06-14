@@ -45,6 +45,9 @@ function deleteDigit(e){
 }
 //function to add digit or decimal to number
 function addDigit(e){
+	if (e.target.textContent === "." && currNum.includes(".")){
+		return;
+	}
 	currNum += e.target.textContent;
 	updateDisplay();
 }
@@ -78,6 +81,7 @@ function calculate(){
 			break;
 		default:
 			if(numTwo === "0"){
+				alert("Can not divide by 0!");
 				break;
 			}
 			currNum = (+numOne) / (+numTwo);
@@ -101,6 +105,8 @@ function updateDisplay(){
 function makeNegative(){
 	if(currNum === ""){
 		currNum = "-";
+	} else{
+		alert("Can only have 1 negative sign at the beginning of the number.")
 	}
 	updateDisplay();
 }
