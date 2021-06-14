@@ -1,1 +1,1 @@
-# js-calculator
+Create calculator that with HTML and CSS that can do basic arithmetic with positive and negative numbers.
